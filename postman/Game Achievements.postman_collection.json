@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "ade43701-bdd7-4f68-92f8-bd9b4da3afe5",
+		"name": "Game Achievements",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Games - findAll",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Achievemenets - findAllByGameId",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/achievement/byGame/34465da4-55d1-4d10-9f04-dbc4b8d6839d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"achievement",
+						"byGame",
+						"34465da4-55d1-4d10-9f04-dbc4b8d6839d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Achievement create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"displayName\":\"Playoff Runner\",\n\t\"description\":\"Eliminated in first round of Playoff\",\n\t\"icon\":\"playoff-idcon\",\n    \"gameDisplayName\":\"NBA 2k22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/achievement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"achievement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Achievement update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"displayName\":\"Playoff Runner\",\n\t\"description\":\"Eliminated in first round of Playoff\",\n\t\"icon\":\"playoff-idcon\",\n    \"id\":\"4cf798e0-6d94-4566-a56a-25ae8b922e5f\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/achievement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"achievement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Achievement findById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"displayName\":\"Playoff Runner\",\n\t\"description\":\"Eliminated in first round of Playoff\",\n\t\"icon\":\"playoff-idcon\",\n    \"gameDisplayName\":\"NBA 2k22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/achievement/17cf3071-f7e8-492b-8f5c-319d3bc3ce0f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"achievement",
+						"17cf3071-f7e8-492b-8f5c-319d3bc3ce0f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Achievement deleteById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"displayName\":\"Playoff Runner\",\n\t\"description\":\"Eliminated in first round of Playoff\",\n\t\"icon\":\"playoff-idcon\",\n    \"gameDisplayName\":\"NBA 2k22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/achievement/17cf3071-f7e8-492b-8f5c-319d3bc3ce0f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"achievement",
+						"17cf3071-f7e8-492b-8f5c-319d3bc3ce0f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
