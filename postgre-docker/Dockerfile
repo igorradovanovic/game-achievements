@@ -1,0 +1,4 @@
+FROM postgres
+ENV POSTGRES_USERNAME root
+ENV POSTGRES_PASSWORD BjhhzyXNvSlQtDywNwxl
+ENV POSTGRES_DB game_achievements
